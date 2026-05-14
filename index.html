@@ -297,17 +297,7 @@
       height:auto;
       overflow:auto;
     }
-.modal-backdrop{
-  align-items:flex-start;
-  overflow:auto;
-}
 
-.modal{
-  margin-top:12px;
-  margin-bottom:12px;
-  max-height:calc(100vh - 24px);
-  overflow:auto;
-}
     .app{
       height:auto;
       min-height:100vh;
@@ -343,8 +333,31 @@
       margin-top:4px;
       padding:0 4px 2px;
     }
-  }
 
+    .modal-backdrop{
+      align-items:flex-start;
+      overflow:auto;
+      scrollbar-width:none;
+      -ms-overflow-style:none;
+    }
+
+    .modal-backdrop::-webkit-scrollbar{
+      display:none;
+    }
+
+    .modal{
+      margin-top:12px;
+      margin-bottom:12px;
+      max-height:calc(100vh - 24px);
+      overflow:auto;
+      scrollbar-width:none;
+      -ms-overflow-style:none;
+    }
+
+    .modal::-webkit-scrollbar{
+      display:none;
+    }
+  }
 </style>
 </head>
 <body>
