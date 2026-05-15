@@ -409,6 +409,8 @@
       <div class="button-grid" id="paletteBtns">
         <button class="choice active" data-palette="standard">STANDARD</button>
         <button class="choice" data-palette="muted">MUTED</button>
+        <button class="choice" data-palette="shock">SHOCK</button>
+        <button class="choice" data-palette="royal">ROYAL</button>
         <button class="choice" data-palette="vivid">VIVID</button>
         <button class="choice" data-palette="pastel">PASTEL</button>
         <button class="choice" data-palette="neon">NEON</button>
@@ -496,8 +498,10 @@ const PALETTES = {
   standard:{ bg:"#ffffff", fg:"#000000" },
   green:{ bg:"#000000", fg:"#00ff88" },
   amber:{ bg:"#2b240f", fg:"#d6a84f" },
+  shock:{ bg:"#FDE005", fg:"#000000" },
+  royal:{ bg:"#305CDE", fg:"#FFDF00" },
   vivid:{ bg:"#F90D1B", fg:"#FDE005" },
-  muted:{ bg:"#e8dcc7", fg:"#5a4a3f" },
+  muted:{ bg:"#e8dcc7", fg:"#2f2924" },
   neon:{ bg:"#ff2e63", fg:"#00ff88" },
   blues:{ bg:"#071a2f", fg:"#7fd6ff" },
   pastel:{ bg:"#bfe7ff", fg:"#ff8cc8" }
@@ -507,12 +511,15 @@ const PALETTE_REMIXES = {
   standard:{ bg:"#f2efe7", fg:"#1e2328" },
   green:{ bg:"#020b06", fg:"#39d353" },
   amber:{ bg:"#120800", fg:"#ff7a18" },
+  shock:{ bg:"#000000", fg:"#F90D1B" },
+  royal:{ bg:"#FFD700", fg:"#7851A9" },
   vivid:{ bg:"#00A4EF", fg:"#FE6006" },
   muted:{ bg:"#26332b", fg:"#d8b778" },
   neon:{ bg:"#00ff88", fg:"#7a00ff" },
   blues:{ bg:"#71c7ec", fg:"#123c73" },
   pastel:{ bg:"#ffd7e8", fg:"#5bbcff" }
 };
+
 
 const MEMO_FONTS = {
   system:"system-ui, sans-serif",
